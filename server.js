@@ -3,8 +3,11 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.use("/", require("./routes"));
+// routes
+const routes = require("./routes");
+app.use("/", routes);
 
+// app listening to the port
 app.listen(PORT, () => {
-    console.log("running on port 3000");
+    console.log(`running on port ${PORT}`);
 })
