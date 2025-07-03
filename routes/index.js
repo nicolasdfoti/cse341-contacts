@@ -7,6 +7,6 @@ router.get("/", (req, res) => {
 })
 
 // route to JSON contacts
-router.use("/", contactsRoutes);
+router.use("/contacts", contactsRoutes);
 
 module.exports = router;
