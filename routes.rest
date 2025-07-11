@@ -1,0 +1,10 @@
+GET http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+    "firstName": "Lucas",
+    "lastName": "Foti",
+    "email": "lucasafoti@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "15/03/2027"
+}
