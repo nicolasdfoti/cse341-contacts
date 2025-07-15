@@ -16,6 +16,7 @@ const initDb = (callback) => {
             .then((client) => {
                 database = client;
                 callback(null, database);
+                console.log("Database initialized");
             })
             .catch((err) => {
                 callback(err);
